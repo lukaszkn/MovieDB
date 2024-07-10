@@ -1,0 +1,35 @@
+{
+  "configurations" : [
+    {
+      "id" : "41B57CFE-7ED1-4ABC-9DD6-946B5E3260F1",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:MovieDB.xcodeproj",
+      "identifier" : "B242647F2C3EE3D200DE8F47",
+      "name" : "MovieDB"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:MovieDB.xcodeproj",
+        "identifier" : "B24264952C3EE3D300DE8F47",
+        "name" : "MovieDBTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:MovieDB.xcodeproj",
+        "identifier" : "B242649F2C3EE3D300DE8F47",
+        "name" : "MovieDBUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
