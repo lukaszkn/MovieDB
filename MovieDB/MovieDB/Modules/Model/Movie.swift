@@ -4,6 +4,7 @@
 //
 //  Created by Lukasz on 10/07/2024.
 //
+//  Movie model structure
 
 struct Movie: Codable {
     let id: Int
@@ -22,7 +23,6 @@ extension Movie {
             "Original title": originalTitle,
             "Release date": releaseDate,
             "Score": String(describing: voteAverage),
-            "Overview": overview
         ]
     }
 }

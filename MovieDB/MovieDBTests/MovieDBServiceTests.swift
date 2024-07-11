@@ -24,4 +24,18 @@ final class MovieDBServiceTests: XCTestCase {
         }
     }
     
+    func testMockSerchMovies() async throws {
+        let service = MovieDBServiceMock()
+        
+        do {
+            let moviesResponse = try await service.searchMovie(query: "hunt")
+            
+            XCTAssert(moviesResponse.results.count == 1, "We should get 1 title")
+            
+            XCTAssert(moviesResponse.results[0].id == 5, "Id for the title should be 5")
+        } catch {
+            XCTFail("Fetching movies from mock")
+        }
+    }
+    
 }

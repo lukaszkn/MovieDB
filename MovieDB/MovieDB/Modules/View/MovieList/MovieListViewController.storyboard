@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XT8-Df-siT">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pny-G3-keJ">
                                     <size key="itemSize" width="128" height="128"/>
@@ -72,26 +72,13 @@
                                     <outlet property="delegate" destination="Y6W-OH-hqX" id="uo3-bQ-gbq"/>
                                 </connections>
                             </collectionView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="U09-ro-aoL">
-                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="i9w-Sp-F4D"/>
-                                </constraints>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="RsQ-dx-nYQ"/>
-                                </connections>
-                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="XT8-Df-siT" secondAttribute="bottom" id="6TB-oH-tnM"/>
-                            <constraint firstItem="U09-ro-aoL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="GbU-eX-dtE"/>
-                            <constraint firstItem="U09-ro-aoL" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="IZp-6w-Qwr"/>
+                            <constraint firstItem="XT8-Df-siT" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="elo-sA-eeO"/>
                             <constraint firstItem="XT8-Df-siT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="fRD-6i-ZcQ"/>
-                            <constraint firstItem="XT8-Df-siT" firstAttribute="top" secondItem="U09-ro-aoL" secondAttribute="bottom" id="kjv-cG-INr"/>
-                            <constraint firstItem="U09-ro-aoL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="mT6-8O-PNu"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="XT8-Df-siT" secondAttribute="trailing" id="xbl-If-kH3"/>
                         </constraints>
                     </view>

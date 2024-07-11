@@ -18,37 +18,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7zr-ft-gnF">
-                                <rect key="frame" x="0.0" y="59" width="393" height="350"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="400"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="350" id="lsB-3V-vmt"/>
+                                    <constraint firstAttribute="height" constant="400" id="lsB-3V-vmt"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Nex-UQ-Muk">
-                                <rect key="frame" x="0.0" y="417" width="393" height="270"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Nex-UQ-Muk">
+                                <rect key="frame" x="0.0" y="467" width="393" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="ddK-FM-23u"/>
+                                    <constraint firstAttribute="height" constant="150" id="sDz-gE-xRj"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OeP-WC-jTi">
+                                <rect key="frame" x="12" y="617" width="369" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="7zr-ft-gnF" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="4z5-Fg-8nK"/>
+                            <constraint firstItem="OeP-WC-jTi" firstAttribute="top" secondItem="Nex-UQ-Muk" secondAttribute="bottom" id="GY7-C5-kqy"/>
+                            <constraint firstItem="OeP-WC-jTi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="12" id="RDd-Te-nH8"/>
                             <constraint firstItem="Nex-UQ-Muk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="aJq-kZ-mRN"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="7zr-ft-gnF" secondAttribute="trailing" id="ex5-IA-uVz"/>
                             <constraint firstItem="Nex-UQ-Muk" firstAttribute="top" secondItem="7zr-ft-gnF" secondAttribute="bottom" constant="8" symbolic="YES" id="g5X-Iq-gTV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="OeP-WC-jTi" secondAttribute="trailing" constant="12" id="gMd-se-64g"/>
                             <constraint firstItem="7zr-ft-gnF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="hV5-Rb-Tsh"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Nex-UQ-Muk" secondAttribute="trailing" id="o6O-Hr-1jy"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="movieDetailsStack" destination="Nex-UQ-Muk" id="WhS-18-CuV"/>
-                        <outlet property="posterImage" destination="5EZ-qb-Rvc" id="gbt-UB-4v7"/>
+                        <outlet property="movieOverview" destination="OeP-WC-jTi" id="vt0-rd-SAK"/>
+                        <outlet property="posterImage" destination="7zr-ft-gnF" id="AWx-ch-Noc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="-13"/>
+            <point key="canvasLocation" x="130.53435114503816" y="-13.380281690140846"/>
         </scene>
     </scenes>
     <resources>
