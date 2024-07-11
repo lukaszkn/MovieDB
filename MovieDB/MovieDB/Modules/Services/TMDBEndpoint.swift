@@ -11,6 +11,7 @@ struct TMDBEndpoint {
     static let baseUrl = "https://api.themoviedb.org/3"
     static let posterUrl = "https://image.tmdb.org/t/p/w500"
     
+    /// https://developer.themoviedb.org/docs/image-basics
     static func posterImageUrl(path: String) -> URL? {
         URL(string: posterUrl + path)
     }
@@ -19,5 +20,9 @@ struct TMDBEndpoint {
     
     static var fetchNowPlayingUrl: String {
         baseUrl + "/movie/now_playing"
+    }
+    
+    static var searchMovieUrl: String {
+        baseUrl + "/search/movie"
     }
 }
