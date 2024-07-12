@@ -4,6 +4,7 @@
 //
 //  Created by Lukasz on 10/07/2024.
 //
+//  Tests for movie database service
 
 import XCTest
 @testable import MovieDB
@@ -24,7 +25,8 @@ final class MovieDBServiceTests: XCTestCase {
         }
     }
     
-    func testMockSerchMovies() async throws {
+    /// Test movie searching using mock service data
+    func testMockSearchMovies() async throws {
         let service = MovieDBServiceMock()
         
         do {

@@ -15,6 +15,9 @@ protocol LocalStorageServiceProtocol {
     
     /// Toggle favourite status of the movie
     func toggleFavouriteMovieStatus(movieModel: MovieModel)
+    
+    /// Clear all favourite movies
+    func clearAll()
 }
 
 /// Implementation of local storage service
@@ -52,7 +55,18 @@ class LocalStorageService: LocalStorageServiceProtocol {
             movieModel.isFavourite = true
         }
         
-        /// Save data to user's defaults
+        save()
+    }
+    
+    /// Clear all stores favourite movies
+    func clearAll() {
+        movieIds.removeAll()
+        save()
+    }
+    
+    /// Save data to user's defaults
+    private func save() {
         UserDefaults.standard.setValue(Array(movieIds), forKey: Settings.movieIdsKey)
+        UserDefaults.standard.synchronize()
     }
 }
